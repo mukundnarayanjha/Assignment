@@ -4,7 +4,7 @@ using AutoFixture;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-using MphasisAssignment.Controllers;
+using Assignment.API.Controllers;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

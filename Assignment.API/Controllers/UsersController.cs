@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace MphasisAssignment.Controllers
+namespace Assignment.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MphasisAssignment.Extensions
+namespace Assignment.API.Extensions
 {
     public static class ApplicationBuilderExtensions
     {

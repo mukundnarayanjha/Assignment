@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 using Serilog;
 using Serilog.Events;
 
-namespace MphasisAssignment
+namespace Assignment.API
 {
     public class Program
     {
@@ -36,7 +36,7 @@ namespace MphasisAssignment
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
                 .WriteTo.RollingFile(@"./logs/ErrorLog-{Date}.txt", outputTemplate: "{Timestamp:yyyy-MM-dd HH:mm:ss.fff zzz} {Level}:{EventId} [{SourceContext}] {Message}{NewLine}{Exception}")
-                .WriteTo.MSSqlServer("server=.\\SQLEXPRESS;database=MphasisAssignmentDB;Trusted_Connection=True;", "LogEntries", autoCreateSqlTable: true)
+                .WriteTo.MSSqlServer("server=.\\SQLEXPRESS;database=AssignmentDB;Trusted_Connection=True;", "LogEntries", autoCreateSqlTable: true)
                 .CreateLogger();
         }
     }

@@ -13,7 +13,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 
-namespace MphasisAssignment.Controllers
+namespace Assignment.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

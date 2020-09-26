@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Builder;
-using MphasisAssignment.Exceptions;
+using Assignment.API.Exceptions;
 using System.Diagnostics.CodeAnalysis;
 
-namespace MphasisAssignment.Extensions
+namespace Assignment.API.Extensions
 {
     [ExcludeFromCodeCoverage]
     public static class ErrorLoggingMiddlewareExtensions

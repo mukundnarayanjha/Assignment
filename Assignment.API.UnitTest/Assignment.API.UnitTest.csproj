@@ -20,7 +20,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Assignment.API.Data\Assignment.API.Data.csproj" />
-    <ProjectReference Include="..\MphasisAssignment\MphasisAssignment.csproj" />
+    <ProjectReference Include="..\Assignment.API\Assignment.API.csproj" />
   </ItemGroup>
 
 </Project>

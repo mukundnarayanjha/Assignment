@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MphasisAssignment", "MphasisAssignment\MphasisAssignment.csproj", "{6883F34A-74E6-4388-9AD0-4DDA78A72932}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment.API", "Assignment.API\Assignment.API.csproj", "{6883F34A-74E6-4388-9AD0-4DDA78A72932}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Assignment.API.Models", "Assignment.API.Models\Assignment.API.Models.csproj", "{EC356FA7-8543-404D-8E3B-ED670F0F2913}"
 EndProject

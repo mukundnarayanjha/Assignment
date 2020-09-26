@@ -1,9 +1,8 @@
-﻿using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using System.Diagnostics.CodeAnalysis;
 
-namespace MphasisAssignment
+namespace Assignment.API
 {
     [ExcludeFromCodeCoverage]
     public class ModelStateValidationFilter : ActionFilterAttribute

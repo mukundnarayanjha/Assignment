@@ -1,22 +1,11 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Security.Principal;
-using System.Text;
-using System.Threading.Tasks;
+using Assignment.API.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using MphasisAssignment.Extensions;
 
-namespace MphasisAssignment
+namespace Assignment.API
 {
     public class Startup
     {

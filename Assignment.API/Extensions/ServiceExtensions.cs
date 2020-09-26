@@ -14,7 +14,7 @@ using Microsoft.OpenApi.Models;
 using System;
 using System.Text;
 
-namespace MphasisAssignment.Extensions
+namespace Assignment.API.Extensions
 {
     public static class ServiceExtensions
     {
@@ -86,7 +86,7 @@ namespace MphasisAssignment.Extensions
             {
                 c.SwaggerDoc("v1", new OpenApiInfo
                 {
-                    Title = "MphasisAssignment API",
+                    Title = "Assignment API",
                     Version = "v1"
                 });
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
@@ -119,10 +119,10 @@ namespace MphasisAssignment.Extensions
             var tokenValidationParams = new TokenValidationParameters
             {
                 ValidateIssuer = true,
-                ValidIssuer = "http://mphasisassignment.com",
+                ValidIssuer = "http://Assignment.com",
 
                 ValidateAudience = true,
-                ValidAudience = "http://mphasisassignment.com",
+                ValidAudience = "http://Assignment.com",
 
                 ValidateIssuerSigningKey = true,
                 IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["AuthSection:JWtConfig:Key"])),

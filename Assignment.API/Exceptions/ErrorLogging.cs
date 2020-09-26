@@ -8,7 +8,7 @@ using System.Security.Authentication;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MphasisAssignment.Exceptions
+namespace Assignment.API.Exceptions
 {
     [ExcludeFromCodeCoverage]
     public static class ErrorLogging

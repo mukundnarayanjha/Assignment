@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MphasisAssignment.Extensions
+namespace Assignment.API.Extensions
 {
     public static class MiddlewareExtensions
     {
@@ -18,7 +18,7 @@ namespace MphasisAssignment.Extensions
             // specifying the Swagger JSON endpoint.
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MphasisAssignment API V1");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Assignment API V1");
             });
             return app;
         }
