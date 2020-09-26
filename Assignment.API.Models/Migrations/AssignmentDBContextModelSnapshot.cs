@@ -98,9 +98,10 @@ namespace Assignment.API.Models.Migrations
 
             modelBuilder.Entity("Assignment.API.Models.LogEntry", b =>
                 {
-                    b.Property<Guid>("Id")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Exception")
                         .HasColumnType("nvarchar(max)");
@@ -150,6 +151,7 @@ namespace Assignment.API.Models.Migrations
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -210,6 +212,7 @@ namespace Assignment.API.Models.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("EmailId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("FullName")
@@ -225,6 +228,7 @@ namespace Assignment.API.Models.Migrations
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Password")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<Guid>("RoleId")

@@ -66,7 +66,8 @@ namespace Assignment.API.Models.Migrations
                 name: "LogEntries",
                 columns: table => new
                 {
-                    Id = table.Column<Guid>(nullable: false),
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     Message = table.Column<string>(nullable: true),
                     MessageTemplate = table.Column<string>(nullable: true),
                     Level = table.Column<string>(nullable: true),
@@ -85,7 +86,7 @@ namespace Assignment.API.Models.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
-                    Name = table.Column<string>(nullable: true),
+                    Name = table.Column<string>(nullable: false),
                     GenreId = table.Column<Guid>(nullable: false),
                     LanguageId = table.Column<Guid>(nullable: false),
                     MultiplexId = table.Column<Guid>(nullable: false),
@@ -132,9 +133,10 @@ namespace Assignment.API.Models.Migrations
                 {
                     Id = table.Column<Guid>(nullable: false),
                     UserName = table.Column<string>(nullable: true),
-                    EmailId = table.Column<string>(nullable: true),
+                    EmailId = table.Column<string>(nullable: false),
                     FullName = table.Column<string>(nullable: true),
-                    Password = table.Column<string>(nullable: true),
+                    Password = table.Column<string>(nullable: false),
+                    RoleId = table.Column<Guid>(nullable: false),
                     CreatedDate = table.Column<DateTime>(nullable: false),
                     ModifiedDate = table.Column<DateTime>(nullable: true),
                     LastLoggedInDate = table.Column<DateTimeOffset>(nullable: true),
